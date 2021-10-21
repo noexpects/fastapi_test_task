@@ -19,8 +19,8 @@ services:
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=12345
       - POSTGRES_DB=fastapi_test_task
-    expose:
-      - 5432
+    ports:
+      - 5432:5432
 
 volumes:
   postgres_data:
